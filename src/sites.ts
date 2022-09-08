@@ -12,6 +12,14 @@ const sites: {[key: string]: SiteInfo} = {
     name: 'M-Team',
     icon: getSiteIcon('m-team'),
   },
+  'tracker-public.tjupt.org': {
+    name: '北洋园',
+    icon: getSiteIcon('tjupt'),
+  },
+  't.pthome.net': {
+    name: 'PTHOME',
+    icon: getSiteIcon('pthome'),
+  },
   'tracker.keepfrds.com': {
     name: 'FRDS',
     icon: getSiteIcon('keepfrds'),
