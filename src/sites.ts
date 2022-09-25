@@ -20,6 +20,10 @@ const sites: {[key: string]: SiteInfo} = {
     name: 'PTHOME',
     icon: getSiteIcon('pthome'),
   },
+  't.audiences.me': {
+    name: '观众',
+    icon: getSiteIcon('audiences'),
+  },
   'tracker.keepfrds.com': {
     name: 'FRDS',
     icon: getSiteIcon('keepfrds'),
