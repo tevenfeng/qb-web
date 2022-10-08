@@ -7,6 +7,8 @@ describe('to precision', () => {
   test.each([
     [0.1, 1, '0'],
     [0.1, 2, '0.1'],
+    [0.9, 1, '1'],
+    [99.5, 2, '100'],
     [122, 1, '122'],
   ])('case %#', (value, precision, result) => {
     expect(toPrecision(value, precision)).toEqual(result);
@@ -18,6 +20,8 @@ describe('format size', () => {
     [0, '0 B'],
     [10, '10 B'],
     [500, '500 B'],
+    [998, '998 B'],
+    [999, '0.98 KiB'],
     [1000, '0.98 KiB'],
   ])('case %#', (value, result) => {
     expect(formatSize(value)).toEqual(result);
@@ -40,7 +44,7 @@ describe('format duration', () => {
 
 describe('format timestamp', () => {
   test.each([
-    // [948602096, '2000-01-23 12:34:56'], # comment for timezone issue
+    // [948602096, '2000-01-23 12:34:56'], # commented out due to timezone issue
     [null, ''],
     [-1, ''],
   ])('case %#', (value, result) => {
