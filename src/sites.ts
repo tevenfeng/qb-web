@@ -16,6 +16,14 @@ const sites: {[key: string]: SiteInfo} = {
     name: '北洋园',
     icon: getSiteIcon('tjupt'),
   },
+  'tracker.dicmusic.club': {
+    name: '海豚',
+    icon: getSiteIcon('dicmusic'),
+  },
+  'tracker.pterclub.com': {
+    name: 'PT之友',
+    icon: getSiteIcon('pterclub'),
+  },
   't.pthome.net': {
     name: 'PTHOME',
     icon: getSiteIcon('pthome'),
