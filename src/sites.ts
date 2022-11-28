@@ -16,6 +16,10 @@ const sites: {[key: string]: SiteInfo} = {
     name: '北洋园',
     icon: getSiteIcon('tjupt'),
   },
+  'tracker.hdchina.org': {
+    name: '瓷器',
+    icon: getSiteIcon('hdchina'),
+  },
   'tracker.dicmusic.club': {
     name: '海豚',
     icon: getSiteIcon('dicmusic'),
