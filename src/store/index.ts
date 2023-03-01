@@ -124,7 +124,9 @@ const store = new Vuex.Store<RootState>({
     torrentGroupByTag(state, getters) {
       const result: any = {}
       for (const torrent of getters.allTorrents) {
-        const tags: any[] = torrent.tags.split(",");
+        const reg = /\s*/g;
+        var tagStr = torrent.tags.replace(reg, "")
+        const tags: any[] = tagStr.split(",");
         tags.forEach(tag => {
           let list: any[] = result[tag]
           if (!list) {
